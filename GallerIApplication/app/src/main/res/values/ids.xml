@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="topDrawer" type="id" />
+    <item name="date" type="id" />
+    <item name="viewpager" type="id" />
+    <item name="bottomDrawer" type="id" />
+    <item name="share" type="id" />
+    <item name="location" type="id" />
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav_graph"
+    app:startDestination="@id/mainRecycler">
+
+    <fragment
+        android:id="@+id/mainRecycler"
+        android:name="com.example.galleri.ui.fragments.MainRecycler"
+        android:label="fragment_main_recycler"
+        tools:layout="@layout/fragment_main_recycler" >
+        <action
+            android:id="@+id/action_mainRecycler_to_individualImage"
+            app:destination="@id/individualImage" />
+    </fragment>
+    <fragment
+        android:id="@+id/individualImage"
+        android:name="com.example.galleri.ui.fragments.IndividualImage"
+        tools:layout="@layout/fragment_individual_image"
+        android:label="IndividualImage" >
+        <action
+            android:id="@+id/action_individualImage_to_individual_image_dialog"
+            app:destination="@id/individual_image_dialog">
+            <argument
+                android:name="title"
+                app:argType="string"
+                android:defaultValue="Title" />
+            <argument
+                android:name="size"
+                app:argType="integer"
+                android:defaultValue="0" />
+            <argument
+                android:name="date"
+                app:argType="long"
+                android:defaultValue="0L"/>
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/individual_image_dialog"
+        android:name="com.example.galleri.ui.bottomsheets.IndividualImageBottomsheet"
+        tools:layout="@layout/individual_image_bottomsheet"/>
+</navigation>
