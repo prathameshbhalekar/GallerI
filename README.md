@@ -13,7 +13,7 @@
 
 
 
-The Dataset is built by scrapping [Unsplash](https://unsplash.com/) and can be found here : [Kaggle Link](https://www.kaggle.com/prathameshbhalekar/images-scraped-from-unsplash) It has Following categories:
+The Dataset is built by scrapping [Unsplash](https://unsplash.com/) and can be found here : [Kaggle Link](https://www.kaggle.com/prathameshbhalekar/images-scraped-from-unsplash). It has Following categories:
 
 No. | Second Header
 ------------ | -------------
